@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+		<!-- 组成：
+			提示信息
+			表单控件
+				
+			表单域:form
+				属性：
+				action:设置后台程序处理数据的后台程序
+				method：提交数据给后台程序的方式
+					1.get:将数据显示在地址栏中，不安全
+					2.post：提交数据，会通过后台（异步），提高安全性
+			 -->
+
+		<form action="1.php" method="post">
+
+			用户名：<input type="text" name="username">
+
+			<br>
+			<br>
+
+			密  码：<input type="password" name="pwd">
+
+			<br>
+			<br>
+
+			<input type="submit">
+			
+		</form>
+
+</body>
+</html>

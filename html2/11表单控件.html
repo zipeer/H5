@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 表单控件（重要）：
+		文本输入框：<input type="text">
+		属性：
+			maxlength:设置最大长度
+			readonly：设置控件为只读（推荐）
+			disanled:禁止用户输入
+			value：设置默认值
+			name:设置控件名称
+			id：控件编号
+		密码：
+			<input type="password">
+		单选控件：
+			属性：
+			<input type="radio" name="gender">男
+			<input type="radio" name="gender">女
+			设置相同的name名称
+			checked：设置默认值
+		下拉列表：
+			option：选项
+			属性：
+			selected:设置默认选中项
+			multiple:设置多选
+		多选控件：
+			<input type="checkbox">看书
+			属性：
+			checked：默认选中项
+		资源上传控件：
+			<input type="file">
+		文本域：
+			<textarea></textarea>
+		隐藏控件：
+			<input type="hidden" value="123">
+		按钮：
+			普通按钮：<input type="button" value="按钮">
+			提交按钮：<input type="submit">
+			重置按钮：<input type="reset">
+			图片提交按钮：<input type="image" src="favicon.ico">
+
+ -->
+ 		<h4 style="color:pink">青春不常在</h4>
+		<!-- 表单域 -->
+		<form action="1.php" method="get">
+
+			<fieldset>
+
+				<legend>人员注册信息</legend>
+			昵称：
+			<input type="text" maxlength="6" value="请输入昵称" name="username" id="01">
+
+			<br>
+			<br>
+
+			密码：
+			<input type="password">
+			<br>
+			<br>
+
+			性别：
+			<input type="radio" name="gender" checked>男
+			<input type="radio" name="gender" checked>女
+			<br>
+			<br>
+
+			籍贯：
+			<select>
+				
+				<option>河南</option>
+				<option>上海</option>
+				<option selected>北京</option>
+				<option>河北</option>
+			</select>
+			<!-- 其他写法 -->
+			<select>
+				<optgroup label="河南">
+					<option>洛阳</option>
+					<option>商丘</option>
+					<option>郑州</option>
+					<option>平顶山</option>
+					
+				</optgroup>
+			</select>
+			<br>
+			<br>
+
+			爱好：
+				<input type="checkbox" checked>看书
+				<input type="checkbox" checked>学习
+				<input type="checkbox">旅游
+				<input type="checkbox">玩游戏
+				<br>
+				<br>
+
+			请上传头像：
+				<input type="file">
+				<br>
+				<br>
+
+			文本域：
+				<textarea></textarea>
+				<br><br>
+
+			<!-- 隐藏控件 -->
+			<input type="hidden" value="123">
+
+			<!-- 提交按钮 -->
+			<input type="submit" value="提交标签">
+
+			<input type="button" value="按钮标签">
+
+			<input type="reset" value="重置标签">
+
+			<input type="image" src="favicon.ico">
+			
+			</fieldset>
+
+		</form>
+</body>
+</html>
