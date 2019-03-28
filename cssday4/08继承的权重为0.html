@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.father {/*0010*/
+		color: green!important;
+	}
+	p {/*0001*/
+		/*有自己的优先执行自己的,不管优先级问题了*/
+		color: red;
+	}
+	/*div {
+		color: green;
+	}*/
+	</style>
+</head>
+<body>
+	<div class="father">
+		<p>继承问题</p>
+	</div>
+</body>
+</html>
