@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.father {
+		/*盒子最终的像素由border、padding、和width和height决定*/
+		/*margin:外边距，和内边距类似*/
+		width: 180px;
+		height: 180px;
+		background-color: pink;
+		/*padding: 100px;*/
+		padding-left: 100px;/*常用上和左就行了，不必用四个方向的*/
+		padding-top: 100px;
+		border: 10px solid red;
+	}
+	.son {
+		width: 100px;
+		height: 100px;
+		background-color: purple;
+	}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

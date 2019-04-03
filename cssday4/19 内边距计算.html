@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div {
+		width: 200px;
+		height: 200px;
+		border: 1px solid red;
+		padding-left: 10px;
+		/*非常严重的问题，padding会让带有width和height的盒子变大*/
+		/*1.要求div是标准的200*200
+		2.但是padding回撑坏盒子
+		3.我们怎样保证盒子不超过200*200
+		所以只能将盒子的width和height变小*/
+	}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
