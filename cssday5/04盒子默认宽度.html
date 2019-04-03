@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	.father {
+		height: 200px;
+		width: 300px;
+		background-color: pink;
+		/*padding-left: 30px;*//*因为父亲盒子有宽度给指定了，则padding会撑开*/
+	}/*孩子如果没有宽度，可以继承父亲的宽度，占满父亲的宽度*/
+	.son {
+		padding-left: 20px;/*此时padding不影响盒子的大小*/
+		/*儿子没有给定宽度，用的是默认的，所以padding不会撑开盒子*/
+	}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son">123</div>
+	</div>
+</body>
+</html>

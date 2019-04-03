@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.father {
+		width: 500px;
+		height: 500px;
+		background-color: pink;
+		margin-top: 50px;
+		/*border: 1px solid pink;用border隔开大小盒子，1.会撑大盒子*/
+		/*padding-top: 1px;第二种,用padding*/
+		overflow: hidden;
+	}
+	.son {
+		width: 200px;
+		height: 200px;
+		background-color: purple;
+		margin-top: 50px;
+		margin-left: 50px;
+	}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>
