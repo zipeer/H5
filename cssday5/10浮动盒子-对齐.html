@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div {
+		width: 100px;
+		height: 100px;
+		/*float: left;*/
+	}
+	.one {
+		background-color: pink;
+		float: left;/*第一个盒子浮动，没有固定位置*/
+	}
+	.two {
+		background-color: purple;
+		/*float: left;*//*第二个盒子不浮动，在第一个盒子下面，占了一行*/
+	}
+	.three {
+		background-color: #ccc;
+		float: left;/*第三个盒子另起一行，浮动*/
+		/*特性二：三个都加浮动，才能在同一行*/
+	}
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+	<div class="three"></div>
+</body>
+</html>
