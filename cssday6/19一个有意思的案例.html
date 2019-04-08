@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div {
+		width: 250px;
+		height: 400px;
+		border: 1px solid #ccc;
+		float: left;
+		margin-left: -1px;/* 细线框，因为是浮动的，所以外边距-1之后后面的盒子要紧贴着前面的盒子，所以边框变细 */
+		position: relative;
+	}
+	div:hover {
+		border: 1px solid #f40;/* 这时候重叠的边框只显示一条 */
+		/* position:  relative; *//* 让盒子成为相对定位，比标准流高一级，浮在上面，所以能够显示完整边框  */
+		z-index: 1;/* 如果之前就是定位，只需要改变定位层级的值 */
+	}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

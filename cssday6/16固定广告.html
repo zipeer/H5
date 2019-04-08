@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.top {
+		height: 44px;
+		background: url(images/top.png) no-repeat top center;
+		/* 背景图片不会程开盒子，插入图片会程开盒子，所以在这里要给盒子一个固定长度    */
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+	.box {
+		width: 1002px;
+		margin: 44px auto 0;/* 上44 左右auto 下0 */
+	}
+	.ad-l,.ad-r {
+		position: fixed;
+		top: 100px;
+	}
+	.ad-r{
+		right: 0;
+	}
+	</style>
+</head>
+<body>
+	<img src="images/ad-l.png" height="288" width="120" alt="" class="ad-l">
+	<img src="images/ad-r.png" height="288" width="120" alt=""
+	class="ad-r">
+	<div class="top"></div>
+	<div class="box">
+		<img src="images/box.png">
+	</div>
+</body>
+</html>

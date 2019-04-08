@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.yeye {
+		width: 800px;
+		height: 800px;
+		background-color: skyblue;
+		position: absolute;
+		top: 100px;
+		left: 100px;
+	}
+	.father {
+		width: 500px;
+		height: 500px;
+		background-color: pink;
+		/* margin: 100px; */
+		
+	}
+	.son {
+		/* 绝对定位是将元素依据最近的已经定位（绝对、固定或相对定位）的父元素（祖先）进行定位 */
+		width: 200px;
+		height: 200px;
+		background-color: purple;
+		position: absolute;
+		top: 50px;
+		left: 50px;
+	}
+	</style>
+</head>
+<body>
+	<div class="yeye">
+		<div class="father">
+			<div class="son"></div>
+		</div>
+	</div>
+	
+</body>
+</html>

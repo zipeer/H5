@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div {
+		width: 200px;
+		height: 200px;
+		background-color: pink;
+		position: absolute;
+		/* 1. z-index的默认属性值是0，取值越大，定位元素在层叠元素中越居上。
+		2. 如果取值相同，则根据书写顺序，后来居上 */
+
+	}
+	.red {
+		z-index: 1 ;
+	}	/* 后面数字一定不能加单位。 */
+		/* 只有相对定位，绝对定位，固定定位有此属性，其余标准流，浮动，静态定位都无此属性，亦不可指定此属性。 */
+	.blue {
+		background-color: blue;
+		left: 50px;
+		top: 50px;
+		z-index: 999;
+	}
+	.green {
+		background-color: green;
+		left: 100px;
+		top: 100px;
+	}
+	</style>
+</head>
+<body>
+	<div class="red"></div>
+	<div class="blue"></div>
+	<div class="green"></div>
+</body>
+</html>

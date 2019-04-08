@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.father {
+		width: 500px;
+		height: 500px;
+		background-color: purple;
+		margin: 100px;
+		position: relative;
+	}
+	.ad {
+		width: 200px;
+		height: 200px;
+		background-color: pink;
+		position: fixed;/* 固定定位，脱离文档流，不占位置特定的绝对定位 */
+		/* 认死理型，只以浏览器为准，不以父亲为准 */
+		/* 固定定位是独立的，不参与布局，主结构搭建完毕之后，在考虑固定结构 */
+		left: 0;
+		top: 100px;
+	}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="ad">abc</div>
+	</div>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+	<p>我是文字</p>
+</body>
+</html>

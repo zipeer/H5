@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.father {
+		width: 500px;
+		height: 500px;
+		background-color: pink;
+		margin: 100px;
+	}
+	.son {/* 和浮动有区别，会从父亲里面出来 */
+		/* 若所有父元素都没有定位，以浏览器为准对齐(document文档) */
+		width: 200px;
+		height: 200px;
+		background-color: purple;
+		position: absolute;
+		top: 50px;
+		left: 50px;
+	}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>
