@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div {
+		width: 120px;
+		height: 20px;
+		border: 1px solid #f00;
+		white-space: nowrap;/* 首先加这句话 */
+		overflow: hidden;/* 其次是这句话 */
+		/* text-overflow: clip; *//* 这样是直接裁剪 */
+		text-overflow: ellipsis;/* 超出的部分显示省略号 */
+		
+
+	}
+	</style>
+</head>
+<body>
+	<div>
+		我的名字是张朋，一名在校大学生
+	</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div::before {/* 没有大小，行内元素 */
+		content: "张朋";
+		background-color: pink;
+		border: 1px solid red;
+		width: 100px;
+		height: 100px;/* 类元素，伪元素选择器，就是选区对象，伪元素选择器本质上是一个插入元素（标签，盒子） */
+		display: block;
+	}
+	div::after {
+		content: "哈哈哈";
+		display: block;
+		width: 50px;
+		height: 50px;
+		border: 1px solid skyblue;
+
+	}
+	</style>
+</head>
+<body>
+	<div>123</div>
+</body>
+</html>

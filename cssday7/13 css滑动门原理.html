@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		display: inline-block;
+		height: 33px;/* 不能给宽度 */
+		background: url(images/ao.png) no-repeat;
+		padding-left: 15px;
+		color: #fff;
+		text-decoration: none;
+		line-height: 33px;
+	}
+	a span {
+		height: 33px;
+		display: inline-block;
+		background: url(images/ao.png) no-repeat right;/* span 不能给宽度，利用padding挤开，span要右边的圆角，所以背景位置右对齐 */
+		padding-right: 15px;
+	}
+	</style>
+</head>
+<body>
+	<a href="#">
+		<span>首页</span>
+	</a>
+	<a href="#">
+		<span>三个字</span>
+	</a>
+	<a href="#">
+		<span>试一试很多个字的情况</span>
+	</a>
+</body>
+</html>

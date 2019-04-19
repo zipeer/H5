@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div {
+		/* 图片或者表单等行内块元素,底侧会有一个空白缝隙。 */
+		width: 222px;
+		height: 220px;
+		background-color: pink;
+	}
+	/* 1.给img 添加 display：block; 转换为块级元素就不会存在问题了
+	2.给img vertical-align:middle | top等等。  让图片不要和基线对齐 */
+	img {
+		/* display: block; *//* 转换位块级元素 */
+		vertical-align: top;
+		
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="images/3.jpg" height="220" width="222" alt="">
+	</div>
+</body>
+</html>
