@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: pink;
+		/* transform: translate(x,y); */
+		transition: all 0.5s;
+		
+	}
+	div:active {/* 鼠标点击发生变化 */
+		/* transform: translate(0,50px); *//* 只动y轴 */
+		transform: translateX(50px);/* 只动x轴 */
+	}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

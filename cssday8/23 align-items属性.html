@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	section {
+		width: 1000px;
+		height: 600px;
+		border: 2px solid pink;
+		margin: 100px auto;
+		display: flex;
+		justify-content: space-around;
+		align-items: stretch;
+		/* stretch默认值。项目被拉伸以适应容器。让子元素的高度拉伸适用父容器（子元素不给高度的前提下)
+		center项目位于容器的中心。垂直居中
+		flex-start项目位于容器的开头。垂直对齐开始位置 上对齐
+		flex-end项目位于容器的结尾。垂直对齐结束位置 底对齐 */
+
+	}
+	div {
+		width: 250px;
+		height: 200px;
+	}
+	div:first-child {
+		background-color: pink;
+	}
+	div:nth-child(2) {
+		background-color: purple;
+	}
+	div:nth-child(3) {
+		background-color: skyblue;
+	}
+	div:nth-child(4) {
+		background-color: hotpink;
+	}
+	div:nth-child(5) {
+		background-color: deeppink;
+	}
+	</style>
+</head>
+<body>
+<section>
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+</section>
+	
+</body>
+</html>

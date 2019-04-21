@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	section {
+		width: 80%px;/* 可以伸缩 */
+		height: 200px;
+		border: 1px solid pink;
+		margin: 100px auto;
+		/* 父亲加入flex格式 */
+		display: flex;/* 伸缩布局模式 */
+		min-width: 700px;/* 最小宽度 */
+	}
+	section div {
+		height: 100%;
+		/* flex: 1; *//* 子盒子添加份数,三个盒子，每个都占一份 */
+
+	}
+	section div:nth-child(1) {
+		background-color: pink;
+		flex: 1;
+	}
+	section div:nth-child(2) {
+		background-color: purple;
+		margin: 0 5px;/* margin不会让盒子掉下来，普通的三等分布局会让盒子掉下来 */
+		flex: 2;/* 这个盒子占了两份 */
+	}
+	section div:nth-child(3) {
+		background-color: skyblue;
+		flex: 1;
+	}
+	</style>
+</head>
+<body>
+	<section>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</section>
+</body>
+</html>

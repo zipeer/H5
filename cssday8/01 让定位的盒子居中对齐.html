@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div {
+		width: 200px;
+		height: 200px;
+		background-color: pink;
+		/* transform: translate(100px); *//* 水平移动100px */
+		/* transform: translate(50%); *//* translate移动距离如果是%，则是以自己的宽度为准 *//* 这句话的意思就是走了自己的宽度200的50% */
+		/* 以前我们让定位的盒子居中对齐 */
+		position: absolute;
+		left:50%;
+		top: 50%;
+		/* margin-left: -100px;需要计算，不合适 */
+		transform: translate(-50%,-50%);/* 水平居中对齐 *//* 这样不在需要计算，方便 */
+	}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

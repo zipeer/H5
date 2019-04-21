@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: pink;
+		margin: 100px auto;
+		transition: all 0.2s;
+	}
+	div:hover {
+		transform: scale(2);
+	}
+	section {
+		width: 632px;
+		height: 340px;
+		margin: 0 auto;
+		overflow: hidden;
+		border: 2px solid red;
+		
+	}
+	section img {/* 因为图片缩放了，所以要过度img，设做动画，给谁加过渡 */
+		transition: all 0.2s;
+	}
+	section:hover img {/* 鼠标经过section时，里卖弄的img缩放 */
+		transform: scale(1.2);
+	}
+	</style>
+</head>
+<body>
+	<div></div>
+	<section>
+		<img src="images/mi.jpg" height="340" width="632" alt="">
+	</section>
+</body>
+</html>
